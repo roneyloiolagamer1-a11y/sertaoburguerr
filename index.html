@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sertão Burgers — Cardápio</title>
+  <meta name="description" content="Cardápio digital do Sertão Burgers. Sexta, sábado e domingo, das 19h às 23h. Peça pelo WhatsApp.">
+  <meta name="theme-color" content="#070605">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="previa" id="previa" hidden>
+    Prévia do cardápio: nomes, preços e fotos são de exemplo.
+  </div>
+
+  <header class="topo">
+    <div class="sol" aria-hidden="true"></div>
+    <img class="logo" src="assets/logo.png" width="220" height="220" alt="Sertão Burgers: o sabor que conquista, a qualidade que fica">
+
+    <p class="status" id="status" role="status" aria-live="polite">
+      <span class="status__ponto" aria-hidden="true"></span>
+      <span class="status__texto" id="status-texto">Carregando horário…</span>
+    </p>
+    <p class="horario">Sexta, sábado e domingo, das 19h às 23h</p>
+  </header>
+
+  <nav class="categorias" id="categorias" aria-label="Categorias do cardápio"></nav>
+
+  <main id="cardapio" class="cardapio"></main>
+
+  <footer class="rodape">
+    <p class="rodape__nome">Sertão Burgers</p>
+    <p class="rodape__lema">Sabor de verdade do sertão.</p>
+    <p class="rodape__links" id="rodape-links"></p>
+  </footer>
+
+  <a class="pedir-fixo" id="pedir-fixo" href="#" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+
+  <script src="cardapio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
